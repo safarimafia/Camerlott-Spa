@@ -1,0 +1,169 @@
+/* General Styling */
+body {
+  font-family: 'Playfair Display', serif;
+  background-color: #fde4e1;
+  /* Soft pastel pink background */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Navbar Styling */
+header {
+  background-color: #f2dede;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #b08d57;
+  /* Shiny gold color */
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #e4bf72;
+  /* Lighter gold for hover effect */
+  text-shadow: 0px 0px 5px #fff4e0;
+}
+
+.logo {
+  height: 80px;
+  width: auto;
+}
+
+/* Section Styling */
+section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fde4e1;
+  color: #333;
+}
+
+section h1 {
+  font-size: 42px;
+  margin-bottom: 40px;
+  color: #b08d57;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.intro p {
+  font-size: 24px;
+  color: #555;
+}
+
+/* Treatments Section */
+.treatment h2 {
+  font-size: 32px;
+  color: #b08d57;
+  margin-bottom: 20px;
+}
+
+.treatment p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  color: #666;
+}
+
+/* Gallery Styling */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer Styling */
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f8c471;
+  /* Gold color for footer */
+  color: white;
+  border-top: 5px solid #e4bf72;
+  /* Slightly darker gold border */
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  section h1 {
+    font-size: 36px;
+  }
+
+  .treatment h2 {
+    font-size: 28px;
+  }
+
+  .treatment p {
+    font-size: 16px;
+  }
+}

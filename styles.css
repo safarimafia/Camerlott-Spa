@@ -9,11 +9,12 @@ body {
   line-height: 1.6;
 }
 
-/* Navbar Styling */
 header {
-  background-color: #f2dede;
-  padding: 15px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(120deg, #c66091, #686379);
+
+  background-repeat: no-repeat;
+  /* Apply marble texture */
+
 }
 
 .nav-container {
@@ -39,7 +40,7 @@ nav ul li a {
   text-decoration: none;
   color: #b08d57;
   /* Shiny gold color */
-  font-size: 18px;
+  font-size: 23px;
   font-weight: bold;
   transition: color 0.3s ease, text-shadow 0.3s ease;
 }
@@ -51,7 +52,9 @@ nav ul li a:hover {
 }
 
 .logo {
-  height: 80px;
+  height: 100%;
+  max-height: 170px;
+  /* Optional: set a max height to avoid it becoming too large */
   width: auto;
 }
 
@@ -123,15 +126,19 @@ section h1 {
   margin: 0 auto;
   padding: 40px 20px;
   text-align: center;
-  background-color: #f8c471;
-  /* Gold color for footer */
-  color: white;
-  border-top: 5px solid #e4bf72;
-  /* Slightly darker gold border */
+  background: linear-gradient(120deg, #f385bc, #a6a4a4);
+  background-image: url('path_to_marble_texture.png');
+  /* Apply marble texture */
+  background-size: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 2px solid #b08d57;
+  /* Gold border */
+  color: #b08d57;
+  /* Match text color in header and footer */
 }
 
 footer a {
-  color: white;
+  color: #b08d57;
   text-decoration: none;
   font-weight: bold;
 }
